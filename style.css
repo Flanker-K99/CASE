@@ -1,0 +1,399 @@
+#grad {  background-image: linear-gradient(rgb(15,46,46),rgb(18,18,18) ,rgb(18,18,18));}
+
+
+body{
+   
+    height: calc(100%-70px) ;
+    width: 100%;
+    overflow: hidden;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+
+    margin:6px 6px 0px 6px;
+}
+
+.nav{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 400px;
+    width: 533px;
+    margin-left: 2px;
+    margin-right: 6px;
+    
+    border-radius: 10px;
+}
+
+
+
+
+/* nav-1 */
+.nav-1{
+   
+    justify-content: center;
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 20px 0px 20px 20px ;
+    margin-bottom: 6px;
+    height: 112px;
+    background:#1d1d1f;
+}
+.nav-3{
+    background:#1d1d1f;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.dropdown-menu{
+    background: #202122;
+}
+.dropdown-menu a {
+    color: white;
+}
+
+ .nav-1 a span{
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    text-decoration: none;
+
+ }    
+
+/* nav-2 */
+.nav-2{
+    justify-content: center;
+    border-radius: 10px;
+    padding: 15px 0px 0px 15px ;
+    height: 405px;
+    background:#1d1d1f;
+}
+.nav-2-1{
+    margin-left:15px;
+    margin-top: 15px;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+}
+  
+.nav-2 a{
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    text-decoration: none;
+}
+.pl{
+    margin-top: 20px;
+}
+.pl span{
+    border-radius: 20px;
+    
+    padding: 6px 12px 6px 12px ;
+    margin-top: 10px;
+    background: #332D2D;
+}
+.nav-2-2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-left: 10px;
+
+ 
+}
+
+
+.playlist{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-right: 10px;
+    padding-left: 5px;
+  
+   
+    color: #fff;
+    overflow-y: scroll;
+   
+    height: 260px;
+   
+   
+    
+    
+}
+.playlist h5{
+    font-weight: normal;
+}
+
+.playlist p{
+     font-size: 14px;
+     color:rgba(109, 122, 135, 0.7);
+}
+.playlist div:hover{
+    background: #29292b;
+    border-radius: 5px;
+    padding-left: 2px;
+
+}
+
+/*Homepage*/
+.homepage{
+    background:#1d1d1f;
+    width: 68%;
+    border-radius: 10px;
+    padding-right: 10px ;
+    padding-left: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    height: 522px;
+    padding-top :70px;
+}
+
+.homepage-titte{
+    background: rgb(15,46,46 );
+
+    height: 65px;
+    display: flex;
+    justify-content:space-between;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 15px 10px 0px 10px ;
+    
+    position:absolute;
+    top: 6px;
+    right:  5px;
+   width: 70%;
+}
+.btn-h1{
+    position: absolute;
+}
+.btn-h1 span{
+    border-radius: 20px;
+}
+.btn-h2 {
+    position: fixed;
+    right: 30px;
+    top:10px
+   
+}
+.btn-h2 h5{
+    border-radius: 20px;
+    
+}
+
+/*homepage-playlist*/
+
+
+/*homepage-pl*/
+.homepage-pl{
+    display: flex;
+    justify-content:flex-start;
+    margin-left: 10px;
+    
+
+}
+.homepage-pl img {
+    border-top-left-radius:5px ;
+    border-bottom-left-radius:5px ;
+}
+.homepage-pl p {
+    color: #fff;
+    font-weight: bold;
+}
+.homepage-pl .homepage-pl-l{
+    display: flex;
+    flex-direction: column;
+   width: 50%;
+   
+}
+
+.nut{
+    display: flex;
+    flex-direction: row;
+    background: #202122;
+    border-top-right-radius:5px ;
+    border-bottom-right-radius:5px ;
+}
+.nut p{
+   padding: 19px 110px 4px 10px;
+}
+.nut {
+    background: #202122;}
+.nut i {
+   
+    margin-top: 9px;
+    padding-right: 5px;
+    
+    
+}
+.nut:hover {
+    background: #29292b;
+    border-top-right-radius:5px ;
+    border-bottom-right-radius:5px ;
+}
+.nut :hover i {
+    background: #29292b;
+    border-top-right-radius:5px ;
+    border-bottom-right-radius:5px ;
+   
+}
+
+
+
+.homepage-pl .homepage-pl-r{
+    display: flex;
+    flex-direction: column;
+    width: 50%
+}
+.homepage-pl-l div{
+  margin-bottom: 5px;
+  width: 400px;
+  height: 63px;
+}
+.homepage-pl-r div{
+    margin-bottom: 5px;
+    width: 350px;
+  height: 63px;
+}
+.homepage-pl p {
+width: 300px;
+padding-right: 10px;
+}
+
+/*danh cho ban*/
+.danh-cho-ban{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.name{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.day-mix{
+    color: #fff;
+    background: #202122;
+   padding: 16px 16px 0px 16px ;
+   border-radius: 10px;
+   margin-left: 12px;
+   margin-right: 12px;
+    
+    
+   
+    
+    
+}
+.day-mix img{
+    border-radius: 6px;
+}
+.day-mix p{
+    color:rgba(109, 122, 135, 0.7);
+    font-size: 14px;
+    
+    
+}
+.day-mix:hover{
+    background: #29292b;
+}
+.day-mix2:hover{
+    background: #29292b;
+}
+
+.hh{
+    display: flex;
+    justify-content: center;
+}
+.day-mix2{
+    color: #fff;
+    background: #202122;
+   padding: 16px 16px 0px 16px ;
+   border-radius:10px ;
+   margin-left: 12px;
+   margin-right: 12px;
+   
+    
+   
+    
+    
+}
+
+.day-mix2 p{
+    color:rgba(109, 122, 135, 0.7);
+    font-size: 14px;
+    
+    
+    
+}
+.day-mix2 img {
+    border-radius: 6px;
+}
+/*.kk{
+    display: flex;
+    justify-content:space-evenly;
+}
+.kk i {
+    position: relative;
+    top: -292px;
+    right: 8px;
+}
+
+.man-che {
+   position: relative;
+   top:-149px;
+   left: 128px;
+
+}
+.man-che2{
+    position: relative;
+    top:-220px;
+    left: -10px;
+    opacity: 0;
+    
+}
+*/
+
+.main2{
+    
+    width: 100%;
+    height: 15%;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    color:rgba(109, 122, 135, 0.7);
+
+}
+ .control-1{
+    justify-content: center;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+.control-2{
+    margin-top: 30px;
+
+}
+.control-2 .x{
+    display: flex;
+    justify-content: center;
+    
+}
+.ran{
+   width: 450px;
+}
+.control-3{
+    padding-top: 30px;
+}
+.control-3 i{
+    padding-left: 10px;
+    
+}
+.main2 i:hover {
+color: #fff;
+
+}
+   
+   

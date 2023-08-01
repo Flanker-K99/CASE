@@ -1,0 +1,68 @@
+.nav-1{
+   
+   
+    background: black;
+}
+.nav-1 a {
+    color: white;
+    font-weight:500;
+    font-size: 16px;
+}
+.img1{
+   padding: 10px 70px 40px 70px;
+   margin-left: 10px;
+}
+.img-text{
+    padding-bottom: 90px;
+  
+}
+
+.img-text h5{
+   text-align: center;
+   font-weight: bolder;
+}
+.img-text p {
+    text-align: center;
+}
+.mini{
+    background: white;
+    border-radius: 10px;
+    width: 360px;
+    height: 480px;
+    padding: 15px;
+    box-shadow: 2px 2px 2px 2px #AAA;
+}
+.mini p{
+  font-weight: normal;
+}
+
+table tr td {
+    padding: 10px 40px;
+    color: white;
+}
+table tr td:hover {
+    color:rgb(20, 183, 20);
+
+}
+.cc div p {
+    padding-right: 10px;
+    color: rgb(164, 167, 167);
+    font-size: 12px;
+
+}
+.cc div p:hover {
+    
+    color:rgb(20, 183, 20);
+
+}
+
+@media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    header, main  {
+        padding: 5px;
+      width: 100%;
+    }
+    .bt1 , .bt2  {
+        width: 80%;
+      }
+}

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f6ebecc4ba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCript>aSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <title>Spotify</title>
+    
+
+    
+
+</head>
+<body style="background: black;">
+
+  <script>
+  function bigImg(x) {
+  x.style.opacity="1"
+}
+
+function normalImg(x) {
+  x.style.opacity="0"
+};
+
+    
+</script>
+<style>
+   
+  @media screen and (max-width: 1000px) {
+   
+    .homepage-titte{
+      position: absolute;
+      right: 0px;
+      width: 630px;
+
+    }
+    
+    .ran{
+      width: 300px;
+    }
+    .homepage{
+      width: 50%;
+    }
+    
+
+   
+  }
+
+  @media screen and (max-width: 800px) {
+    .homepage-tittet{
+      width: 50%;
+      background: rgba(15,46,46 ,0.1);
+
+    }
+    .homepage-titte{
+      position: absolute;
+      right: 0px;
+      width: 470px;
+
+    }
+    .btn-h1{
+      display: none;
+    }
+    .homepage-pl{
+      display: flex;
+      flex-direction: column;
+    }
+    .ran{
+      width: 200px;
+    }
+    .ran2{
+      width: 50px;
+    }
+    .control-3 i {
+      font-size: medium;
+    }
+  }
+  
+  @media screen and (max-width: 550px ){
+    .nav , .nav-1 , .nav-3{
+    display: none;
+    }
+    
+    .homepage{
+      width: 100%;
+    }
+    .homepage-titte{
+      position: absolute;
+      right: 0px;
+      width: 100%;
+
+    }
+    .control-2 i {
+      font-size: medium;
+    }
+    .control-3{
+      display: none;
+    }
+    .ran{
+      width: 150px;
+    }
+
+  }
+
+
+
+
+    .homepage{
+      width: 100%;
+    }
+
+  
+    
+</style>
+
+<div class="main">
+   <nav class="nav">
+        <div class="nav-1">
+         <div>
+            <a href="">
+            <span ><i class="fa-solid fa-house  pr-3"></i></span>
+            <span  style="font-weight: bold;font-size: medium;">Trang chủ</span>
+            </a>
+         </div>
+         <div class="pt-3">
+            <a href="">
+            <span><i class="fa-solid fa-magnifying-glass pr-3"></i></span>
+            <span style="font-weight: bold;font-size: medium;">Tìm kiếm</span> 
+            </a>
+         </div>
+        </div>
+
+        <div class="nav-3">
+            <div class="nav-2-1">
+                <a href="">
+                <span><i class="fa-solid fa-book-bookmark pr-3 " style="color: white;"></i></span>
+                <span style="color: white;font-weight: bold;font-size: medium;">Thư viện</span>
+                </a>
+                <div><i class="fa-solid fa-plus pr-3" style="color: #d8e3e4;"></i>
+                  <i class="fa-solid fa-arrow-right pr-4 " style="color: #c2c9d6;"></i>
+                </div>
+                
+              
+            </div>
+            <div class="pl">
+                <span style="color: white;">Playlist</span>
+                <span style="color: white;">Nghệ sĩ</span>
+            </div>
+
+
+            <div class="nav-2-2">
+                    <div><a href=""> <i class="fa-solid fa-magnifying-glass" style="color: white;"></i></a></div>
+
+                      <a class="navbar-brand dropdown-toggle" href="#" role="button" data-toggle="dropdown" style="color: white; font-size: 18px;">
+                        Gần đây
+                      </a>
+                      <div class="dropdown-menu" style="background: #202122;">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </div>
+            </div>
+           
+            <div class="playlist" >
+            <div class="playlist-1">
+                <div class="d-flex flex-row ">
+                  <img class=" py-2 pr-3" width="70px" height="70px" src="playlist-4.jpg" alt="">
+                    <div class="text-left " style="padding-top: 10px;">
+                      <h5 class="pt-1 m-0" >Bài hát đã thích </h5>
+                      <p class="p-0 m-0"> Danh sách phát <i class="fa-solid fa-circle fa-2xs"></i> 22 bài</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="playlist-2"> 
+                <div class="d-flex flex-row ">
+                  <img class=" py-2 pr-3" width="70px" height="70px" src="playlist-3.jpg" alt="">
+                    <div class="text-left" style="padding-top: 10px;">
+                      <h5 class="pt-1 m-0">Bài hát đã thích </h5>
+                      <p class="p-0 m-0"> Danh sách phát <i class="fa-solid fa-circle fa-2xs"></i> 22 bài</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="playlist-3">
+                <div class="d-flex flex-row ">
+                  <img class=" py-2 pr-3" width="70px" height="70px" src="playlist-1.jpg" alt="">
+                  <div class="text-left" style="padding-top: 10px;">
+                    <h5 class="pt-1 m-0">Bài hát đã thích </h5>
+                    <p class="p-0 m-0"> Danh sách phát <i class="fa-solid fa-circle fa-2xs"></i> 22 bài</p>
+                  </div>
+                </div>
+            </div>
+
+            <div class="playlist-4">
+                <div class="d-flex flex-row ">
+                  <img class=" py-2 pr-3" width="70px" height="70px" src="playlist-2.jpg" alt="">
+                  <div class="text-left" style="padding-top: 10px;">
+                    <h5 class="pt-1 m-0">Bài hát đã thích </h5>
+                    <p class="p-0 m-0"> Danh sách phát <i class="fa-solid fa-circle fa-2xs"></i> 22 bài</p>
+                  </div>
+                </div>
+            </div>
+        
+
+        <div class="playlist-4">
+          <div class="d-flex flex-row ">
+            <img class=" py-2 pr-3" width="70px" height="70px" src="playlist-2.jpg" alt="">
+            <div class="text-left" style="padding-top: 10px;">
+              <h5 class="pt-1 m-0">Bài hát đã thích </h5>
+              <p class="p-0 m-0"> Danh sách phát <i class="fa-solid fa-circle fa-2xs"></i> 22 bài</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  </nav>
+
+    
+    <div class="homepage" id="grad">
+       <div class="homepage-titte ">
+        <div class="btn-h1 NDH">
+          <span class="btn btn-dark"><i class="fa-solid fa-chevron-left fa-xl "></i></span>
+          <span class="btn btn-dark"><i class="fa-solid fa-chevron-right fa-xl "></i></span>
+        </div>
+        <div class="btn-h2">
+          <h5 class="btn btn-light" ><a style="color:black;font-weight: bold;font-size:small;" href="Prenium.html">Khám phá Prenium</a></h5>
+          <h5 class="btn btn-dark"><a style="color:white;font-weight: bold;font-size:small;" href="dow.html">Cài đặt ứng dụng</a></h5>
+
+          <a class="navbar-brand dropdown" href="#" role="button" data-toggle="dropdown" style="color: white; font-size: 18px;">
+            <img class=" py-2 pr-3" width="50px" height="50px" src="playlist-3.jpg" alt="" style="border-radius:50%;">
+          </a>
+          <div class="dropdown-menu " style=" background: #202122;">
+            <a class="dropdown-item" href="#">Tài khoản <i class="fa-solid fa-arrow-up-right-from-square fa-sm" style="float: right;"></i></a>
+            <a class="dropdown-item" href="#">Hồ sơ</a>
+            <a class="dropdown-item" href="#">Nâng cấp lên Prenium <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i></a>
+            <a class="dropdown-item" href="#">Hỗ trợ <i class="fa-solid fa-arrow-up-right-from-square fa-sm" style="float: right;"></i></a>
+            <a class="dropdown-item" href="#">Tải xuống       <i class="fa-solid fa-arrow-up-right-from-square fa-sm "style="float: right;" ></i></a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Đăng xuất</a>
+          </div>
+          
+
+        </div>
+       </div>
+       
+      
+       <div class="homepage-playlist">
+        <h2 style="color: white;font-weight: bolder;padding: 10px 0px 10px 5px  ;">Chào buổi tối</h2>
+       <div class="homepage-pl">
+        
+        <div class="homepage-pl-l">
+
+          <div class="d-flex flex-row">
+            <img width="62px" height="62px" src="playlist-2.jpg" alt="">
+            <div class="nut" >
+              <p id="LK" >Bài hát đã thích</p>
+              <i class="fa-solid fa-circle-play fa-3x" id="on" style="color: #23af33; opacity: 0;" onmouseenter="bigImg(this)" onmouseleave="normalImg(this)" ></i>
+            </div>
+          </div>
+
+          <div class="d-flex flex-row">
+            <img width="62px" height="62px" src="playlist-5.jpg" alt="">
+            <div class="nut">
+              <p >PlayList nhạc UK</p>
+              <i class="fa-solid fa-circle-play fa-3x" id="on" style="color: #23af33; opacity: 0;" onmouseenter="bigImg(this)" onmouseleave="normalImg(this)" ></i>
+            </div>
+          </div>
+          
+          <div class="d-flex flex-row">
+            <img width="62px" height="62px" src="playlist-6.jpg" alt="">
+            <div class="nut">
+              <p >PlayList nhạc US</p>
+              <i class="fa-solid fa-circle-play fa-3x" id="on" style="color: #23af33; opacity: 0;" onmouseenter="bigImg(this)" onmouseleave="normalImg(this)" ></i>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="homepage-pl-l">
+        <div class="d-flex flex-row">
+          <img width="62px" height="62px" src="playlist-7.jpg" alt="">
+          <div class="nut">
+            <p >PlayList nhạc JP</p>
+            <i class="fa-solid fa-circle-play fa-3x" id="on" style="color: #23af33; opacity: 0;" onmouseenter="bigImg(this)" onmouseleave="normalImg(this)" ></i>
+          </div>
+        </div>
+
+        <div class="d-flex flex-row">
+          <img width="62px" height="62px" src="playlist-3.jpg" alt="">
+          <div class="nut">
+            <p >PlayList nhạc Bass</p>
+            <i class="fa-solid fa-circle-play fa-3x" id="on" style="color: #23af33; opacity: 0;" onmouseenter="bigImg(this)" onmouseleave="normalImg(this)" ></i>
+          </div>
+        </div>
+          
+        <div class="d-flex flex-row">
+          <img width="62px" height="62px" src="playlist-4.jpg" alt="">
+          <div class="nut">
+            <p >PlayList nhạc chạy</p>
+            <i class="fa-solid fa-circle-play fa-3x" id="on" style="color: #23af33; opacity: 0;" onmouseenter="bigImg(this)" onmouseleave="normalImg(this)" ></i>
+          </div>
+        </div>
+        </div>
+      </div>
+      </div>
+      <div class="name">
+        <h4 style="color: white;font-weight: bolder;" >Dành cho bạn</h4>
+        <p class="pt-1" style="color:rgba(109, 122, 135, 0.7);font-weight: bolder;font-size: 14px;">Hiện rất cả </p>
+      </div>
+      
+      <div class="danh-cho-ban">
+        
+        <div class="day-mix">
+          <img width="160px" height="160px" src="Avatar-am-nhac.jpg" alt="">
+          <h5>Daily Mix 1</h5>
+          <p>Xxxxx <br>Yyyyyyyyyyyy</p>
+        </div>
+        <div class="day-mix">
+          <img width="160px" height="160px"  src="black-and-white-music-background-png_227797.jpg" alt="">
+          <h5>Daily Mix 2</h5>
+          <p>Xxxxx <br>Yyyyyyyyyyyy</p>
+
+        </div>
+        <div class="day-mix">
+          <img width="160px" height="160px"  src="video-song-nhac-tren-iphone-min.jpg" alt="">
+          <h5>Daily Mix 3</h5>
+          <p>Xxxxx <br>Yyyyyyyyyyyy</p>
+
+        </div>
+        <div class="day-mix">
+          <img width="160px" height="160px"  src="video-song-nhac-tren-iphone-min.jpg" alt="">
+          <h5>Daily Mix 4</h5>
+           <p>Xxxxx <br>Yyyyyyyyyyyy</p>
+        </div>
+
+      </div>
+
+      <div class="name">
+        <h4 style="color: white;font-weight: bolder;" >Tuyển tập nhạc hay nhất của nghệ sĩ</h4>
+        <p class="pt-1" style="color:rgba(109, 122, 135, 0.7);font-weight: bolder;font-size: 14px;">Hiện rất cả </p>
+      </div>
+
+      <div class="hh">
+        <div class="day-mix2">
+          <img width="160px" height="160px"  src="playlist-6.jpg" alt="">
+          <h5>Tuyển tập JP</h5>
+          <p>Xxxxx <br>Yyyyyyyyyyyy</p>
+
+        </div>
+        <div class="day-mix2">
+          <img width="160px" height="160px"  src="playlist-3.jpg" alt="">
+          <h5>Tuyển tập UK</h5>
+          <p>Xxxxx <br>Yyyyyyyyyyyy</p>
+
+        </div>
+        <div class="day-mix2">
+          <img width="160px" height="160px"  src="playlist-4.jpg" alt="">
+          <h5>Tuyển tập US</h5>
+          <p>Xxxxx <br>Yyyyyyyyyyyy</p>
+
+        </div>
+        <div class="day-mix2">
+          <img width="160px" height="160px" src="rockmusic.jpg" alt="">
+          <h5>Tuyển tập KR</h5>
+          <p>Xxxxx <br>Yyyyyyyyyyyy</p>
+        </div>
+      </div>
+
+
+     
+
+      <!--
+      <div class=kk>
+        <i class="fa-solid fa-circle-play fa-3x" id="on" style="color: #23af33;"></i>
+        <i class="fa-solid fa-circle-play fa-3x" id="on" style="color: #23af33;"></i>
+        <i class="fa-solid fa-circle-play fa-3x" id="on" style="color: #23af33;"></i>
+        <i class="fa-solid fa-circle-play fa-3x" id="on" style="color: #23af33;"></i>
+      </div>
+      -->
+   
+      
+
+
+       </div>
+       </div>
+
+
+    </div>
+
+</div>
+
+<div class="main2">
+  <div class="control-1">
+    <div class="d-flex flex-row">
+    <img width="65px" height="65px" src="playlist-2.jpg" alt="" style="border-radius: 6px;margin-right: 15px;">
+    <div class="text-left" style="padding-top: 10px;">
+      <h5 class="pt-1 m-0" style="color:white;border-radius: 5px;font-size:16;font-weight: 400;">Bài hát đã thích </h5>
+      <p class="p-0 m-0" style="font-size: 12px;font-weight:600;"> Danh sách phát <i class="fa-solid fa-circle fa-2xs"></i> 22 bài</p>
+    </div>
+    <div class="pt-3 m-0"> <i class="fa-regular fa-heart pl-3"></i> </div>
+    <div class="pt-3 m-0"> <i class="fa-solid fa-sliders pl-3"></i> </div>
+  </div>
+  </div>
+
+    <div  class="control-2">
+      <div class="x">
+      <i class="fa-solid fa-shuffle fa-lg pr-4"></i>
+      <i class="fa-solid fa-backward-step fa-lg pr-4"></i>
+      <i class="fa-solid fa-circle-play fa-2xl" style="color:white;"></i>
+      <i class="fa-solid fa-forward-step fa-lg pl-4"></i>
+      <i class="fa-solid fa-repeat fa-lg pl-4 "></i>
+    </div>
+    
+     <input   type="range"  class="mt-3 ran" >
+  
+    </div>
+     
+    <div class="control-3 pr-2">
+      <i class="fa-regular fa-square-caret-right fa-lg"></i>
+      <i class="fa-solid fa-microphone fa-lg"></i>
+      <i class="fa-solid fa-bars-staggered fa-lg"></i>
+      <i class="fa-solid fa-computer fa-lg"></i>
+      <i class="fa-solid fa-volume-high fa-lg"></i>
+      <input type="range" class="ran2"  >
+    </div>
+
+ 
+</div>
+
+</div>
+
+</body>
+</html>
